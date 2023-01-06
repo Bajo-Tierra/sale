@@ -62,10 +62,6 @@
 
         }
 
-        .button_img {
-            width: 40%;
-        }
-
         .connect {
             width: 95%;
             margin: 2px;
@@ -115,14 +111,43 @@
         }
 
         .image {
-            max-height: 25px;
-            max-width: 25px;
-            margin: 10px;
+            max-height: 40px;
+            max-width: 40px;
+            margin: 20px;
             display: inline-block;
+            filter: grayscale(100%);
+
+        }
+
+        .image:hover {
+            filter: grayscale(0%);
+            transform: 2s;
+            transform: scale(1.5, 1.5);
+        }
+
+        .image2 {
+            align-items: center;
+            max-width: 20%;
+            margin: 10px;
+            animation: changetext 3s infinite linear;
         }
 
         .text {
             color: white;
+        }
+
+        @keyframes changetext {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.5, 1.5);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
         }
     </style>
 </head>
@@ -134,7 +159,7 @@
                 class="logo">
         </div>
         <div class="content">
-            <img src="https://www.dropbox.com/s/141r38j51cnfa7n/Machineary%20text.jpg?raw=1" alt="" class="factory">
+            <img src="https://www.dropbox.com/s/hn5xw3ygg96i504/machine_Text.jpg?raw=1" alt="" class="factory">
         </div>
 
         <div class="Outlet_Img">
@@ -150,13 +175,14 @@
             <img src="https://www.dropbox.com/s/be2oqxudlsub3sb/b%20%283%29.jpg?raw=1" alt="" class="factory">
 
             <img src="https://www.dropbox.com/s/f15ksnegu6ic8m0/IMG_2287.jpeg?raw=1" alt="" class="factory">
+            <br>
 
-            <a href="https://bajotierra.com"><img class="button_img"
-                    src="https://www.dropbox.com/s/0vjhhfpoi9f0nus/07.jpg?raw=1" alt=""></a>
+            <a href="https://bajotierra.com"><img class="image2"
+                    src="https://www.dropbox.com/s/57ce2a4ahcq2mml/Order%20Butten.jpg?raw=1" alt=""></a>
 
         </div>
 
-
+        <br>
         <div class="fotter">
             <br>
             <h2 class="text"> Get in touch with us to know more about Bajo Tierra Quartz at</h2>
@@ -184,9 +210,9 @@
                             href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQEtyWgPAveZeAAAAYD-zKh4AlXub0ARsP-hvHTEeGSAR5Af99hRNQVn_WnJ283h5MnDO48tuHzaPexUhg8uu1Li92nWLvLf_h3ertgwl8OKnyj0DBhCAzokLEeJU_8v4k5k7Ig=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fco"><img
                                 class="image" src="https://www.dropbox.com/s/bm05bmm4t13lxv8/linkedin.png?raw=1"
                                 alt=""></a>
-                        <raw=1 <td>
-                            <a href="https://www.instagram.com/bajotierra.quartz"><img class="image"
-                                    src="https://www.dropbox.com/s/jhugjaugzubea5l/instagram.png?raw=1" alt=""></a>
+                    <td>
+                        <a href="https://www.instagram.com/bajotierra.quartz"><img class="image"
+                                src="https://www.dropbox.com/s/jhugjaugzubea5l/instagram.png?raw=1" alt=""></a>
                     </td>
                 </tr>
             </table>

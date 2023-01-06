@@ -33,16 +33,26 @@
         }
 
         .image {
-            max-height: 25px;
-            max-width: 25px;
-            margin: 10px;
+            max-height: 40px;
+            max-width: 40px;
+            margin: 20px;
             display: inline-block;
+            filter: grayscale(100%);
+
+        }
+
+        .image:hover{
+            filter: grayscale(0%);
+            transform: 2s;
+            transform: scale(1.5, 1.5);
         }
 
         .image2 {
             align-items: center;
-            max-width: 40%;
+            max-width: 20%;
             margin: 10px;
+            animation: changetext 3s infinite linear;
+           
         }
 
         .text {
@@ -95,10 +105,10 @@
 
         .factory {
             width: 100%;
-            opacity: 0.92;
+            /* opacity: 0.92; */
         }
 
-    
+
 
         .btn_text {
             position: absolute;
@@ -145,7 +155,7 @@
         }
 
 
-        b{
+        b {
             font-weight: 30px;
         }
 
@@ -170,7 +180,7 @@
         }
 
         .btn {
-           font-weight: 200;
+            font-weight: 200;
         }
 
         @keyframes changetext {
@@ -184,6 +194,22 @@
 
             100% {
                 transform: scale(1, 1);
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            @keyframes changetext {
+                0% {
+                    transform: scale(0.5, 0.5);
+                }
+
+                50% {
+                    transform: scale(1, 1);
+                }
+
+                100% {
+                    transform: scale(0.5, 0.5);
+                }
             }
         }
 
@@ -217,32 +243,15 @@
             outline: 0;
         }
 
-        a{
+        a {
             text-decoration: none;
         }
 
-        h1{
+        h1 {
             font-family: butler Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-weight: 500px;
             font-size: 40px;
         }
-
-        @media only screen and (max-width:900px) {
-            @keyframes changetext {
-                0% {
-                    transform: scale(0.5, 0.5);
-                }
-
-                50% {
-                    transform: scale(1, 1);
-                }
-
-                100% {
-                    transform: scale(0.5, 0.5);
-                }
-            }
-        }
-
     </style>
 </head>
 
@@ -252,7 +261,7 @@
             <table>
                 <tr>
                     <td>
-                        <img class="image1" src="https://www.dropbox.com/s/lplo9ig7fljicdj/001.jpg?raw=1" alt="">
+                        <img class="image1" src="https://www.dropbox.com/s/7iqgwtlvr8eofh4/001.jpg?raw=1" alt="">
                     </td>
                 </tr>
             </table>
@@ -357,7 +366,7 @@
                 <br>
                 <div class="connection">
                     <div class="factory">
-                        <img class="shade_img" src="https://www.dropbox.com/s/ndyteurhhbpef2q/bt%20text.jpg?raw=1"
+                        <img class="shade_img" src="https://www.dropbox.com/s/98xqkiuta6zi0gu/Bt_text.jpg?raw=1"
                             alt="">
                     </div>
                 </div>

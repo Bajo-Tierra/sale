@@ -8,11 +8,12 @@
     <title>Bajo Tierra Fcatory Outlet</title>
 
     <style>
+        /* Logo */
         .container {
             width: 100%;
             height: auto;
-            /* border: 2px solid black; */
-            background-color: rgb(255, 255, 255);
+            /* border: 2px solid black;
+            background-color: rgb(255, 255, 255); */
         }
 
         .logo_container {
@@ -62,10 +63,6 @@
 
         }
 
-        .button_img {
-            width: 40%;
-        }
-
         .connect {
             width: 95%;
             margin: 2px;
@@ -80,8 +77,8 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            /* border: 2px solid white;
-            border-radius: 8px; */
+            border: 2px solid white;
+            border-radius: 8px;
             padding: 2px;
         }
 
@@ -115,14 +112,43 @@
         }
 
         .image {
-            max-height: 25px;
-            max-width: 25px;
-            margin: 10px;
+            max-height: 40px;
+            max-width: 40px;
+            margin: 20px;
             display: inline-block;
+            filter: grayscale(100%);
+
+        }
+
+        .image:hover {
+            filter: grayscale(0%);
+            transform: 2s;
+            transform: scale(1.5, 1.5);
+        }
+
+        .image2 {
+            align-items: center;
+            max-width: 20%;
+            margin: 10px;
+            animation: changetext 3s infinite linear;
         }
 
         .text {
             color: white;
+        }
+
+        @keyframes changetext {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.5, 1.5);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
         }
     </style>
 </head>
@@ -154,7 +180,7 @@
                     state-of-the-art finishing line of Breton reflecting the unique craftsmanship behind the prefab
                     quartz countertops and jumbo-sized quartz slabs.
                 </h5> -->
-                <img src="https://www.dropbox.com/s/q77mj9uvhzsjnuj/Outlet%20text.jpg?raw=1" alt="" class="factory">
+                <img src="https://www.dropbox.com/s/qpau62z3l7l6u5g/Factory_Text.jpg?raw=1" alt="" class="factory">
             </div>
 
             <!-- Image -->
@@ -176,9 +202,9 @@
                 <img src="https://www.dropbox.com/s/vvn9dw31b7ocqyy/DJI_0791.jpg?raw=1" alt="" class="factory">
 
                 <br>
-
-                <a href="https://bajotierra.com"><img class="button_img"
-                        src="https://www.dropbox.com/s/0vjhhfpoi9f0nus/07.jpg?raw=1" alt=""></a>
+                <br>
+                <a href="https://bajotierra.com"><img class="image2"
+                        src="https://www.dropbox.com/s/57ce2a4ahcq2mml/Order%20Butten.jpg?raw=1" alt=""></a>
 
             </div>
 
@@ -256,7 +282,7 @@
                     </tr>
                 </table>
             </div> -->
-
+            <br>
             <div class="fotter">
                 <br>
                 <h2 class="text"> Get in touch with us to know more about Bajo Tierra Quartz at</h2>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bt - Packaging</title>
     <style>
+        /* Logo */
         .container {
             width: 100%;
             height: auto;
@@ -31,7 +32,7 @@
         }
 
         .content {
-            width: 70%;
+            width: 80%;
             text-align: center;
             justify-content: center;
             align-items: center;
@@ -59,10 +60,6 @@
             margin: auto;
             padding: 2px;
 
-        }
-
-        .button_img {
-            width: 40%;
         }
 
         .connect {
@@ -113,7 +110,7 @@
             height: auto;
         }
 
-       .image {
+        .image {
             max-height: 40px;
             max-width: 40px;
             margin: 20px;
@@ -122,14 +119,35 @@
 
         }
 
-        .image:hover{
+        .image:hover {
             filter: grayscale(0%);
             transform: 2s;
             transform: scale(1.5, 1.5);
         }
 
+        .image2 {
+            align-items: center;
+            max-width: 20%;
+            margin: 10px;
+            animation: changetext 3s infinite linear;
+        }
+
         .text {
             color: white;
+        }
+
+        @keyframes changetext {
+            0% {
+                transform: scale(1, 1);
+            }
+
+            50% {
+                transform: scale(1.5, 1.5);
+            }
+
+            100% {
+                transform: scale(1, 1);
+            }
         }
     </style>
 </head>
@@ -141,10 +159,12 @@
                 class="logo">
         </div>
 
-       
+        <div class="content">
+            <img src="https://www.dropbox.com/s/lvlwgr819aip4x7/packging_Text.jpg?raw=1" alt="" class="factory">
+        </div>
+
 
         <div class="Outlet_Img">
-            <img src="https://www.dropbox.com/s/5zitogh3l8vwi1s/09.png?raw=1" alt="" class="factory">
 
             <img src="https://www.dropbox.com/s/20m7heu41d4y8v8/ggg%20%288%29.jpg?raw=1" alt="" class="factory">
 
@@ -155,16 +175,16 @@
             <img src="https://www.dropbox.com/s/itu7gj7q787dzkp/00.jpg?raw=1" alt="" class="factory">
 
             <img src="https://www.dropbox.com/s/e5b45ffg7hcwqkp/g%20%2811%29.jpg?raw=1" alt="" class="factory">
-    
+
             <img src="https://www.dropbox.com/s/c9f8qxsesrxoxll/DSC_0455.JPG?raw=1" alt="" class="factory">
 
             <br>
-
-            <a href="https://bajotierra.com"><img class="button_img"
-                    src="https://www.dropbox.com/s/0vjhhfpoi9f0nus/07.jpg?raw=1" alt=""></a>
+            <br>
+            <a href="https://bajotierra.com"><img class="image2"
+                    src="https://www.dropbox.com/s/57ce2a4ahcq2mml/Order%20Butten.jpg?raw=1" alt=""></a>
 
         </div>
-
+        <br>
         <div class="fotter">
             <br>
             <h2 class="text"> Get in touch with us to know more about Bajo Tierra Quartz at</h2>
