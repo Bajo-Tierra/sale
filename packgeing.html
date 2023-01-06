@@ -113,11 +113,19 @@
             height: auto;
         }
 
-        .image {
-            max-height: 25px;
-            max-width: 25px;
-            margin: 10px;
+       .image {
+            max-height: 40px;
+            max-width: 40px;
+            margin: 20px;
             display: inline-block;
+            filter: grayscale(100%);
+
+        }
+
+        .image:hover{
+            filter: grayscale(0%);
+            transform: 2s;
+            transform: scale(1.5, 1.5);
         }
 
         .text {
